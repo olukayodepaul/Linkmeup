@@ -1,9 +1,9 @@
 import org.gradle.kotlin.dsl.`kotlin-dsl`
 
-plugins{
+plugins {
     `kotlin-dsl`
 }
-
-repositories{
+// Required since Gradle 4.10+.
+repositories {
     jcenter()
 }
