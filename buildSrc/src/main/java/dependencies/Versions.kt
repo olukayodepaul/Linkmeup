@@ -38,4 +38,7 @@ object Versions {
     val androidx_test_ext = "1.1.1"
     val fabric_version = "1.31.2"
     val hilt_version = "2.28-alpha"
+    val hilt_dagger_version = "2.28-alpha"
+    val hilt_compiler_versioin = "2.28-alpha"
+
 }

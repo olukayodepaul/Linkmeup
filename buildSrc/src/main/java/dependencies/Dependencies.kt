@@ -27,5 +27,5 @@ object Dependencies {
     val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit2_version}"
     val retrofit_gson = "com.squareup.retrofit2:converter-gson:${Versions.retrofit2_version}"
     val markdown_processor = "com.yydcdut:markdown-processor:${Versions.markdown_processor}"
-    val hilt = "com.google.dagger:hilt-android-gradle-plugin:${Versions.hilt_version}"
+    val hilt_dagger = "com.google.dagger:hilt-android:${Versions.hilt_dagger_version}"
 }
