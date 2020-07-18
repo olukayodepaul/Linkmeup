@@ -1,7 +1,7 @@
 package dependencies
 
 object Versions {
-    val gradle = "4.0.0"
+    val gradle = "3.5.3"
     val compilesdk = 29
     val minsdk = 21
     val targetsdk = 29
