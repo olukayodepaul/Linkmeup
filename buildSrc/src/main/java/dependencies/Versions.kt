@@ -36,5 +36,4 @@ object Versions {
     val junit_4_version = "4.12"
     val fragment_version = "1.2.0"
     val androidx_test_ext = "1.1.1"
-    val fabric_version = "1.31.2"
 }
