@@ -45,6 +45,7 @@ android {
 }
 
 dependencies {
+
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     // Kotlin
     implementation Dependencies.kotlin_standard_library
@@ -60,4 +61,5 @@ dependencies {
     //hilt
     implementation Dependencies.hilt_dagger
     kapt AnnotationProcessing.hilt_compiler
+
 }
