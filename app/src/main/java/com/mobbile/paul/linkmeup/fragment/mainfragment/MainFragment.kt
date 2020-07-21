@@ -3,6 +3,7 @@ package com.mobbile.paul.linkmeup.fragment.mainfragment
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
+import com.mobbile.paul.linkmeup.R
 
 class MainFragment: Fragment() {
 
@@ -11,7 +12,7 @@ class MainFragment: Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return super.onCreateView(inflater, container, savedInstanceState)
+        return inflater.inflate(R.layout.mainfragment, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

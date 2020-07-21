@@ -14,29 +14,6 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
-class conInjector
- @Inject
- constructor(private val intefaceImp: IntefaceImp){
-    fun getThing(): String {
-        return intefaceImp.getIntefaceObject()
-    }
-}
-
-interface someInterface {
-    fun getInterface(): String
-    fun getIntefaceObject(): String
-}
-
-class IntefaceImp
- constructor(): someInterface{
-    override fun getInterface(): String {
-        return ""
-    }
-
-    override fun getIntefaceObject(): String {
-        return ""
-    }
-}
 
 
 
