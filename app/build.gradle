@@ -62,4 +62,8 @@ dependencies {
     implementation Dependencies.hilt_dagger
     kapt AnnotationProcessing.hilt_compiler
 
+    //navigation graph
+    implementation Dependencies.navigation_fragment
+    implementation Dependencies.navigation_ui
+
 }

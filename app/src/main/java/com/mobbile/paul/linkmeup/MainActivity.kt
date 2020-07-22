@@ -2,9 +2,10 @@ package com.mobbile.paul.linkmeup
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.mobbile.paul.linkmeup.fragment.mainfragment.MainFragment
+import android.view.Menu
+import android.view.MenuItem
+import com.mobbile.paul.linkmeup.fragment.HomeFragment
 import dagger.hilt.android.AndroidEntryPoint
-import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
@@ -17,8 +18,18 @@ class MainActivity : AppCompatActivity() {
     //using navigation Component
     fun showFragment() {
         supportFragmentManager.beginTransaction()
-            .replace(R.id.fragment_container, MainFragment(), "Fragment")
+            .replace(R.id.fragment_container,
+                HomeFragment(), "Fragment")
             .commit()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        return super.onCreateOptionsMenu(menu)
+        menuInflater.inflate(R.menu.main_fragment_manu, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return super.onOptionsItemSelected(item)
     }
 
 }
