@@ -40,5 +40,4 @@ object Versions {
     val hilt_version = "2.28-alpha"
     val hilt_dagger_version = "2.28-alpha"
     val hilt_compiler_versioin = "2.28-alpha"
-
 }

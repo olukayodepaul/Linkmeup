@@ -2,6 +2,7 @@ package com.mobbile.paul.linkmeup
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.mobbile.paul.linkmeup.fragment.mainfragment.MainFragment
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -14,9 +15,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     //using navigation Component
-    fun showFragment(){
-
+    fun showFragment() {
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragment_container, MainFragment(), "Fragment")
+            .commit()
     }
+
 }
 
 
