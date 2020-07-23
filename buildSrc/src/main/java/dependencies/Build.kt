@@ -7,4 +7,5 @@ object Build {
     val junit5 = "de.mannodermaus.gradle.plugins:android-junit5:1.3.2.0"
     val fabric = "io.fabric.tools:gradle:${Versions.fabric_version}"
     val hilt_gradle_plugin = "com.google.dagger:hilt-android-gradle-plugin:${Versions.hilt_version}"
+    val navigation_component_safe_arg = "androidx.navigation:navigation-safe-args-gradle-plugin:${Versions.navigation_component_version}"
 }

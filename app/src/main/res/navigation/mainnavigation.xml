@@ -5,37 +5,45 @@
     android:id="@+id/mainnavigation"
     tools:ignore="UnusedNavigation"
     app:startDestination="@id/homeFragment">
-    <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.mobbile.paul.linkmeup.fragment.HomeFragment"
-        android:label="HomeFragment" >
-        <action
-            android:id="@+id/action_homeFragment_to_profileFragment"
-            app:destination="@id/profileFragment" />
-        <action
-            android:id="@+id/action_homeFragment_to_callScreenFragment"
-            app:destination="@id/callScreenFragment" />
-        <action
-            android:id="@+id/action_homeFragment_to_qrFragment3"
-            app:destination="@id/qrFragment3" />
-        <action
-            android:id="@+id/action_homeFragment_to_videoFragment5"
-            app:destination="@id/videoFragment5" />
-    </fragment>
+
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.mobbile.paul.linkmeup.fragment.ProfileFragment"
         android:label="ProfileFragment" />
+
+    <fragment
+        android:id="@+id/qrFragment"
+        android:name="com.mobbile.paul.linkmeup.fragment.QrFragment"
+        android:label="QrFragment" />
+
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="com.mobbile.paul.linkmeup.fragment.VideoFragment"
+        android:label="VideoFragment" />
+
     <fragment
         android:id="@+id/callScreenFragment"
         android:name="com.mobbile.paul.linkmeup.fragment.CallScreenFragment"
         android:label="CallScreenFragment" />
+
     <fragment
-        android:id="@+id/qrFragment3"
-        android:name="com.mobbile.paul.linkmeup.fragment.QrFragment"
-        android:label="QrFragment" />
-    <fragment
-        android:id="@+id/videoFragment5"
-        android:name="com.mobbile.paul.linkmeup.fragment.VideoFragment"
-        android:label="VideoFragment" />
+        android:id="@+id/homeFragment"
+        android:name="com.mobbile.paul.linkmeup.fragment.HomeFragment"
+        android:label="HomeFragment" >
+
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_qrFragment"
+            app:destination="@id/qrFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_callScreenFragment"
+            app:destination="@id/callScreenFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_videoFragment"
+            app:destination="@id/videoFragment" />
+
+    </fragment>
+
 </navigation>
