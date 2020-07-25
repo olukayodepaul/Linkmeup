@@ -7,4 +7,10 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="Widget.BottomNavigationView14" parent="@style/Widget.Design.BottomNavigationView">
+        <item name="fontFamily">@font/roboto_light</item>
+    </style>
+
+
+
 </resources>
