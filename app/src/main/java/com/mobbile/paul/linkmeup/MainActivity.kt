@@ -7,26 +7,34 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModel
 import androidx.navigation.NavController
 import com.google.android.material.bottomnavigation.BottomNavigationMenuView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.mobbile.paul.linkmeup.fragment.HomeFragment
 import com.mobbile.paul.linkmeup.fragment.QrFragment
 import com.mobbile.paul.linkmeup.fragment.VideoFragment
+import dagger.Module
+import dagger.Provides
+import dagger.hilt.InstallIn
 import dagger.hilt.android.AndroidEntryPoint
+import dagger.hilt.android.components.ActivityComponent
+import dagger.hilt.android.components.ApplicationComponent
+import dagger.hilt.android.components.FragmentComponent
+import dagger.hilt.android.scopes.ActivityRetainedScoped
+import dagger.hilt.android.scopes.ActivityScoped
+import dagger.hilt.android.scopes.FragmentScoped
 import kotlinx.android.synthetic.main.activity_main.*
 import javax.inject.Inject
+import javax.inject.Singleton
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
-
-    @Inject lateinit var something: SomeClass
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         initView()
-        Log.d("TAG", something.doAthing())
     }
 
     private fun initView() {
@@ -59,14 +67,29 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
+interface Api{
+    fun myApiModel(): MyApiModel
+}
 
-class SomeClass
-@Inject
-constructor(){
-    fun doAthing(): String{
-        return "Do a thing is injected"
+class ImplementApi: Api{
+    override fun myApiModel(): MyApiModel {
+        return MyApiModel()
     }
 }
 
+class MyApiModel
+
+
+@Module
+@InstallIn(ApplicationComponent::class)
+class ProvideInteface{
+
+    @Provides
+    @Singleton
+    fun provideApi(): Api{
+        return ImplementApi()
+    }
+
+}
 
 

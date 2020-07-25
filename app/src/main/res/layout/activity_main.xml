@@ -35,6 +35,4 @@
         android:theme="@style/Widget.BottomNavigationView14"
         />
 
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

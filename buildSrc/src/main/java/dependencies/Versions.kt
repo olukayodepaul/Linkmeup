@@ -41,4 +41,7 @@ object Versions {
     val hilt_dagger_version = "2.28-alpha"
     val hilt_compiler_versioin = "2.28-alpha"
     val navigation_component_version = "2.1.0-alpha05"
+    val life_cycle_extension_version = "2.2.0-alpha03"
+    val recycle_view_version = "1.1.0-beta03"
+    val glide_version = "4.9.0"
 }
