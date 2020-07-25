@@ -83,10 +83,9 @@ dependencies {
     implementation Dependencies.recycler_vew
 
     //glide
-    def glide_version = "4.9.0"
     implementation Dependencies.glides
     annotationProcessor Dependencies.glide_github
 
-    // Leak Canary (detecting memory leaks)
+    //Leak Canary (detecting memory leaks)
     debugImplementation Dependencies.leak_canary
 }
